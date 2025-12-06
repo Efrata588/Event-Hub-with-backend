@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EventHub - Attendee Dashboard</title>
+  <link rel="icon" href="../Images/EventHub-strikingly-logo-2025-11-29/logo-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Styles/common/header.css">
+  <link rel="stylesheet" href="../Styles/attendee-dashboard.css">
+  <link rel="stylesheet" href="../Styles/common/back-button.css">
+  <link rel="stylesheet" href="../Styles/common/copy-right.css">
+  <link rel="stylesheet" href="../Styles/common/back-button.css">
+</head>
+<body>
+  <div class="header">
+    <div class="left-header">
+      <img class="logo" src="../Images//EventHub-strikingly-logo-2025-11-29/logo-alt-dark-transparent.png">
+    </div>
+
+    <div class="right-header">
+      <a class="nav-pages" href="./home.html">Home</a>
+      <a class="nav-pages" href="./organizer-privilaged-pages/create-event-form.html">Create</a>
+      <a class="nav-pages" href="./organizer-privilaged-pages/event-recap-form.html">EventLog</a>
+      <a class="nav-pages dashboard active" href="./attendee-dashboard.html">Dashboard</a>
+    </div>
+  </div>
+
+  <a class="back" href="./home.html"><span>&#11013;</span> Back</a>
+
+  <div class="dashboard-container">
+    <div class="profile-section">
+      <div class="profile-header">
+        <h1>My Events</h1>
+        <p>Welcome back, John Bell!</p>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-wrap">
+          <div class="profile-avatar">
+            <img src="../Images/EventHub-strikingly-logo-2025-11-29/logo-favicon.png" alt="Profile Picture">
+          </div>
+          <div class="profile-info">
+            <h2>John Bell</h2>
+            <p class="username">@johnbell</p>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <a href="./profile-edit.html" class="edit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-edit">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="quick-actions-section">
+      <div class="section-header">
+        <h2>Quick Actions</h2>
+        <div class="toggle-buttons">
+          <button class="toggle-btn active" data-tab="saved">Saved Events</button>
+          <button class="toggle-btn" data-tab="participated">Participated Events</button>
+        </div>
+      </div>
+
+
+
+      <div class="tab-content active" id="saved">
+        <div class="events-list">
+          <div class="event-item">
+            <button class="remove-event-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div class="event-image">
+              <img src="../Images/festival.png" alt="Summer Music Festival">
+            </div>
+            <div class="event-details">
+              <h3>Summer Music Festival 2025</h3>
+              <div class="event-meta">
+                <span class="date">Sun, Jun 15, 2025</span>
+                <span class="location">Central Park, New York</span>
+              </div>
+            </div>
+            <div class="event-actions">
+              <a class="quick-actions" href="./view-detail.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+                </svg>
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div class="event-item">
+            <button class="remove-event-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div class="event-image">
+              <img src="../Images/art-and wine.jpg" alt="Art and Wine">
+            </div>
+            <div class="event-details">
+              <h3>Art and Wine Tasting</h3>
+              <div class="event-meta">
+                <span class="date">Sat, Aug 24, 2025</span>
+                <span class="location">Downtown Gallery, Boston</span>
+              </div>
+            </div>
+            <div class="event-actions">
+              <a class="quick-actions" href="view-detail.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+                </svg>
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="copy-right">EventHub &copy; 2025 - All Rights Reserved</div>
+
+</body>
+</html>

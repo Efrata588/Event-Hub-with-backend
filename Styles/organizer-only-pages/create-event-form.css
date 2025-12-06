@@ -1,0 +1,105 @@
+body{
+  font-family: Roboto;
+  background: #f4f0f8;
+  margin-top: 70px;
+  padding: 30px 20px;
+}
+.title{
+  color:#0a4690;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.create-form{
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(16,129,241,0.3);
+}
+
+.section{
+  margin-bottom: 35px;
+}
+
+.section h2{
+  margin-bottom: 10px;
+  color:#0a4690;
+}
+
+label{
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.long-input{
+  height: 70px;
+}
+
+.double{
+  display: flex;
+  column-gap: 35px;
+}
+
+
+.note{
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 8px;
+}
+
+.post-event{
+  width: 100%;
+  padding: 14px;
+  background:#0a4690;
+  color:white;
+  border:none;
+  border-radius:8px;
+  font-size:18px;
+  cursor:pointer;
+  font-weight:bold;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s;
+}
+.post-event:hover {
+  background-color: #09356f;
+}
+.post-event:active{
+  transform: translate3d(3px,3px,7px);
+  box-shadow: none;
+}
+.submit:hover{
+  background:#083a78;
+}
+/*for location radio buttons*/
+.location-type {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.location-type label {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.location-type input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+  accent-color: blue;
+  width: 30px;
+  transform: scale(1.5);
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EventHub - Edit Organizer Profile</title>
+  <link rel="icon" href="../Images/EventHub-strikingly-logo-2025-11-29/logo-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Styles/common/header.css">
+  <link rel="stylesheet" href="../Styles/organizer-profile-edit.css">
+  <link rel="stylesheet" href="../Styles/common/back-button.css">
+  <link rel="stylesheet" href="../Styles/common/copy-right.css">
+</head>
+<body>
+  <div class="header">
+    <div class="left-header">
+      <img class="logo" src="../Images//EventHub-strikingly-logo-2025-11-29/logo-alt-dark-transparent.png">
+    </div>
+
+    <div class="right-header">
+      <a class="nav-pages" href="./home.html">Home</a>
+      <a class="nav-pages" href="./organizer-privilaged-pages/create-event-form.html">Create</a>
+      <a class="nav-pages" href="./organizer-privilaged-pages/event-recap-form.html">EventLog</a>
+      <a class="nav-pages dashboard" href="./attendee-dashboard.html">Dashboard</a>
+    </div>
+  </div>
+
+  <a class="back" href="./organizer-profile.html"><span>&#11013;</span> Back</a>
+
+  <div class="edit-container">
+    <div class="edit-header">
+      <h1>Edit Profile</h1>
+      <p>Update your profile information and preferences</p>
+    </div>
+
+    <form class="edit-form">
+      <div class="form-section">
+        <h2>Edit Profile</h2>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" value="@samedifferent" required>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Profile Picture</h2>
+
+        <div class="profile-picture-section">
+          <div class="current-picture">
+            <img src="../Images/EventHub-strikingly-logo-2025-11-29/logo-favicon.png" alt="Current Profile Picture">
+            <p>Current Profile Picture</p>
+          </div>
+
+          <div class="upload-section">
+            <label for="profile-picture" class="upload-label">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="upload-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9 13.5 13.5m0 0V8.25A2.25 2.25 0 0 0 18.75 6H5.25A2.25 2.25 0 0 0 3 8.25v7.5" />
+              </svg>
+              Choose New Picture
+            </label>
+            <input type="file" id="profile-picture" accept="image/*" style="display: none;">
+            <p class="upload-note">Recommended: Square image, minimum 200x200px, max 2MB</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="cancel-btn">Cancel</button>
+        <button type="submit" class="save-btn">Save Changes</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="copy-right">EventHub &copy; 2025 - All Rights Reserved</div>
+</body>
+</html>

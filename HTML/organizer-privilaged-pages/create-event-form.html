@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Create Event – EventHub</title>
+  <link rel="icon" href="../Images/EventHub-strikingly-logo-2025-11-29/logo-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../Styles/common/header.css">
+  <link rel="stylesheet" href="../../Styles/organizer-only-pages/create-event-form.css">
+  <link rel="stylesheet" href="../../Styles/common/back-button.css">
+  <link rel="stylesheet" href="../../Styles/common/copy-right.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="left-header">
+      <img  class="logo" src="../../Images/EventHub-strikingly-logo-2025-11-29/logo-alt-dark-transparent.png">
+    </div>
+    
+    <div class="right-header">
+      <a class="nav-pages" href="../home.html">Home</a>
+      <a class="nav-pages" href="../organizer-privilaged-pages/create-event-form.html">Create</a>
+      <a class="nav-pages" href="../organizer-privilaged-pages/event-recap-form.html">EventLog</a>
+      <a class="nav-pages dashboard" href="../attendee-dashboard.html">Dashboard</a>
+    </div>
+
+   
+  </div>
+
+<a class="back" href="../organizer-profile.html"><span>&#11013;</span> Back</a>
+
+
+
+<form class="create-form">
+  <h1 class="title">Create New Event</h1>
+  <div class="section">
+    <h2>Basic Information</h2>
+
+    <label>Event Title</label>
+    <input type="text" placeholder="Summer Music Festival">
+
+    <label>Short Description</label>
+    <input type="text" placeholder="A short one-line description">
+
+    <label>About This Event</label>
+    <input type="text" class="long-input" placeholder="Full description of the event">
+  </div>
+
+  <div class="section">
+    <h2>Date & Time</h2>
+
+    <label>Date</label>
+    <input type="date">
+
+    <div class="double">
+      <div>
+        <label>Start Time</label>
+        <input type="time">
+      </div>
+      <div>
+        <label>End Time</label>
+        <input type="time">
+      </div>
+    </div>
+  </div>
+
+    <div class="section">
+    <h2>Location</h2>
+
+    <label>Event Location</label>
+     <div class="location-type">
+      <label>
+        In-Person
+        <input type="radio" name="event-type" value="in-person" checked>
+      </label>
+      <label>
+        Online
+        <input type="radio" name="event-type" value="online">
+      </label>
+    </div>
+    <input type="text" placeholder="Central Park, New York">
+
+   
+ </div>
+
+
+  <div class="section">
+    <h2>Tickets & Pricing</h2>
+
+    <label>Available Tickets</label>
+    <input type="number" placeholder="150">
+
+    <label>Price</label>
+    <input type="number" placeholder="$89.99">
+  </div>
+
+  <div class="section">
+    <h2>Organizer</h2>
+
+    <label>Organizer Name</label>
+    <input type="text" placeholder="Same But Different Consultancy">
+  </div>
+
+  <div class="section">
+    <h2>Event Poster</h2>
+    <p class="note">Upload event poster(required).</p>
+
+    <input type="file" accept="image/*" required>
+  </div>
+  <button type="submit" class="post-event">Post Event</button>
+
+</form>
+<div class="copy-right">EventHub &copy; 2025 - All Rights Reserved</div>
+</body>
+</html>

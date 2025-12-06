@@ -1,0 +1,278 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(244, 240, 248);
+  font-family: roboto, arial;
+  padding: 50px 15px 15px 30px;
+}
+.logo{
+  height: 150px;
+}
+.slogan{
+  font-family: 'Ingrid Darling', cursive;
+  font-size: 40px;  
+  color: #7da6d8;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 400px;
+}
+form div {
+  margin-bottom: 15px; 
+}
+
+input, select{
+  width: 100%; 
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(186, 180, 180); 
+  margin-top: 5px;
+  border-radius: 7px;
+}
+button {
+  margin-top: 10px;
+}
+.button-toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 30px;
+  margin-bottom: 30px;
+}
+.button-toggle button {
+  flex: 1;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius:20px;
+  background-color: #f1f0f6f1;
+  font-weight: bold;
+}
+.button-login{
+  margin-right: -21px;
+}
+.button-toggle .button-signup{
+  background-color: #fff;
+  border: solid;
+  border-width: 3px;
+  border-color: gainsboro;
+  margin-right: 0px;
+}
+/*this is for the toggle effect when it's made interactive/clicked
+.button-toggle .button-login:hover{
+  background-color: #fff;
+  border: solid;
+  border-width: 3px;
+  border-color: gainsboro;
+  z-index: 100;
+}
+.button-toggle .button-signup:hover{
+  background-color: #fff;
+  border: solid;
+  border-width: 3px;
+  border-color: gainsboro;
+  margin-right: 0px;
+}*/
+
+/*
+this is when the create account is button and not anchor
+
+  form button.create-account{
+  width: 100%;
+  background-color: rgb(33, 3, 59);
+  height: 30px;
+  color: #f4f4f4;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}*/ 
+.create-account {
+  display: flex;
+  justify-content: center;
+  padding: 8px 5px;
+  background-color: #0a4690;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(16, 129, 241, 0.5);
+}
+.create-account:hover {
+  background-color: #304e73;
+}
+.to-login{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #3d98e7;
+  text-decoration: none;
+  cursor: pointer;
+}
+.to-login:hover {
+  color: #304e73;
+}
+
+@media (max-width: 1200px) {
+  form {
+    width: 450px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 40px;
+  }
+
+  .logo {
+    height: 130px;
+  }
+
+  .slogan {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  form {
+    width: 400px;
+    padding: 25px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .logo {
+    height: 120px;
+  }
+
+  .slogan {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 90%;
+    max-width: 380px;
+    padding: 20px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .slogan {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    width: 95%;
+    max-width: 350px;
+    padding: 18px;
+  }
+
+  .button-toggle {
+    margin-bottom: 25px;
+  }
+
+  .button-toggle button {
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 100%;
+    max-width: 300px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 90px;
+  }
+
+  .slogan {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  form {
+    width: 95%;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .button-toggle {
+    height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .button-toggle button {
+    font-size: 13px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 100%;
+    max-width: 280px;
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+
+  .to-login,
+  .to-signup {
+    font-size: 16px;
+  }
+}
+
+

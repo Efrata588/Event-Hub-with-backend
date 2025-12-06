@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EventHub</title>
+  <title>EventHub</title>
+  <link rel="icon" href="../../Images/EventHub-strikingly-logo-2025-11-29/logo-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../Styles/common/header.css">
+  <link rel="stylesheet" href="../../Styles/organizer-only-pages/event-recap-form.css">
+  <link rel="stylesheet" href="../../Styles/common/back-button.css">
+  <link rel="stylesheet" href="../../Styles/common/copy-right.css">
+</head>
+<body>
+    <div class="header">
+    <div class="left-header">
+      <img  class="logo" src="../../Images/EventHub-strikingly-logo-2025-11-29/logo-alt-dark-transparent.png">
+    </div>
+    
+    <div class="right-header">
+      <a class="nav-pages" href="../home.html">Home</a>
+      <a class="nav-pages" href="../organizer-privilaged-pages/create-event-form.html">Create</a>
+      <a class="nav-pages" href="../organizer-privilaged-pages/event-recap-form.html">EventLog</a>
+      <a class="nav-pages dashboard" href="../attendee-dashboard.html">Dashboard</a>
+    </div>
+
+   
+  </div>
+  <a class="back" href="../organizer-profile.html"><span>&#11013;</span> Back</a>
+
+  <main>
+    <div class="form-container">
+      <h1>Event Recap Form</h1>
+      <form>
+        <p class="label">Event Name</p>
+        <input type="text" placeholder="Enter event name" required>
+
+        <p class="label">Event Date</p>
+        <input type="date" required>
+
+        <p class="label">Event Summary</p>
+        <input type="text" placeholder="Write a short summary about the event" required>
+
+        <p class="label">Event Timeline</p>
+        <div class="timeline-container">
+          <div class="timeline-entry">
+            <input type="time" placeholder="Time" required>
+            <input type="text" placeholder="Description" required>
+            <button class="add-icon">+</button>
+          </div>
+        </div>
+
+        <p class="label">Upload Event Photos</p>
+        <p class="photo-note">Please upload high-quality event photos (JPG or PNG). Recommended size: minimum 800x600px, maximum file size: 5MB per image for optimal display quality.</p>
+        <div class="photo-uploads">
+          <input type="file" accept="image/*" required>
+          <input type="file" accept="image/*" required>
+          <input type="file" accept="image/*" required>
+          <input type="file" accept="image/*" required>
+          <input type="file" accept="image/*" required>
+        </div>
+
+        <button type="submit" class="post-button">Post Event Recap</button>
+      </form>
+    </div>
+  </main>
+  <div class="copy-right">EventHub &copy; 2025 - All Rights Reserved</div>
+</body>
+</html>
