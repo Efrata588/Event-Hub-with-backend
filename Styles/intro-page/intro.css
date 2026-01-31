@@ -5,7 +5,7 @@
   font-family: roboto, arial;
 }
 
-body {
+.intro-page {
   background-color: rgb(244, 240, 248);
   color: #333;
   line-height: 1.6;
@@ -17,7 +17,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(249, 251, 252, 0.312);
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 15px 30px;
@@ -99,7 +99,6 @@ body {
 
 .slogan {
   font-size: 60px;
-  font-family: 'Rubik', sans-serif;
   font-weight: 700;
   margin-bottom: 15px;
   margin-top: 50px;
@@ -296,6 +295,9 @@ body {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(10, 70, 144, 0.1);
   transition: transform 0.3s ease;
+}
+.last-stat-item{
+    grid-column: 2;
 }
 
 .stat-item:hover {
@@ -511,6 +513,9 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  .last-stat-item{
+    grid-column: 2;
+  }
 }
 
 @media (max-width: 480px) {
@@ -585,5 +590,8 @@ body {
 
   .events-grid {
     grid-template-columns: 1fr;
+  }
+  .last-stat-item{
+    grid-column: 2;
   }
 }

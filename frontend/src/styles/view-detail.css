@@ -1,0 +1,298 @@
+* {
+  font-family: roboto, arial;
+}
+body {
+  background-color: rgb(244, 240, 248);
+  padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.view-detail-page {
+  margin-bottom: 50px;
+}
+.container img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+}
+.icon {
+  width: 25px;
+}
+.bottom-half {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  column-gap: 50px;
+  margin-top: 30px;
+}
+.descrption-container {
+  margin-bottom: 100px;
+}
+.short-description h3 {
+  color: #0a4690;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.short-description p {
+  font-size: 18px;
+  margin: 0;
+}
+.descrption-container .about h2 {
+  color: #0a4690;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.descrption-container .about p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+.event-details {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 13px rgba(16, 129, 241, 0.5);
+}
+
+.time-and-location {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  row-gap: 10px;
+}
+.ticket-and-price {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  row-gap: 10px;
+  margin-bottom: 25px;
+}
+/*this is for the color theme of icons*/
+.calander {
+  color: #327cd7;
+}
+.clock {
+  color: rgb(19, 251, 139);
+}
+.location {
+  color: rgb(246, 91, 56);
+}
+.ticket {
+  color: rgb(156, 11, 182);
+}
+.notes {
+  color: rgb(16, 165, 65);
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4px;
+}
+.event-details .detail .more-detail {
+  color: rgb(133, 133, 134);
+}
+.quick-actions {
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 5px rgba(16, 129, 241, 0.5);
+  background-color: #0a4690;
+  color: white;
+  column-gap: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.quick-actions:hover {
+  transform: scale(1.04);
+}
+.quick-actions:active {
+  transform: scale(0.9);
+}
+.quick-actions svg {
+  width: 20px;
+}
+.bottom-half-left h2 {
+  color: #0a4690;
+}
+/*for the profile displayed at the detail information*/
+.profile {
+  background-color: white;
+  display: flex;
+  width: fit-content;
+  padding: 10px;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(16, 129, 241, 0.5);
+  transition: transform 0.3s;
+}
+.profile:hover {
+  transform: scale(1.03);
+}
+.profile-picture {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  border: 2px solid #0a4690;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 300px;
+}
+.org-name {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.info-title {
+  font-size: 16px;
+  color: rgb(168, 167, 167);
+  margin-bottom: 7px;
+}
+.amount {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.org-info {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5%;
+}
+.follow {
+  font-size: 20px;
+  padding: 8px 16px;
+  color: white;
+  background-color: #0a4690;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.follow:active {
+  color: #0a4690;
+  background-color: rgb(243, 243, 243);
+}
+
+@media (max-width: 1200px) {
+  .bottom-half {
+    column-gap: 30px;
+  }
+
+  .event-details {
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container img {
+    height: 400px;
+  }
+
+  .bottom-half {
+    column-gap: 20px;
+  }
+
+  .short-description h3 {
+    font-size: 25px;
+  }
+
+  .descrption-container .about p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container img {
+    height: 350px;
+  }
+
+  .bottom-half {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .org-info {
+    column-gap: 40px;
+  }
+  .bottom-half-left {
+    margin-bottom: 50px;
+  }
+
+  .event-details {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container img {
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .short-description h3 {
+    font-size: 22px;
+  }
+
+  .descrption-container .about h2 {
+    font-size: 24px;
+  }
+
+  .descrption-container .about p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .org-name {
+    font-size: 18px;
+  }
+
+  .org-info {
+    column-gap: 40px;
+  }
+
+  .follow {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .event-details h3 {
+    font-size: 20px;
+  }
+
+  .time-and-location svg,
+  .ticket-and-price svg {
+    width: 20px;
+  }
+
+  .quick-actions {
+    font-size: 14px;
+    padding: 6px 4px;
+  }
+
+  .quick-actions svg {
+    width: 18px;
+  }
+}

@@ -1,0 +1,22 @@
+.icon {
+  width: 25px;
+  color: #327cd7;
+}
+
+.clock {
+  color: rgb(19, 251, 139);
+}
+
+.location {
+  color: rgb(246, 91, 56);
+}
+
+.ticket {
+  color: blueviolet;
+}
+.price {
+  color: rgb(8, 109, 8);
+}
+.wifi {
+  color: purple;
+}

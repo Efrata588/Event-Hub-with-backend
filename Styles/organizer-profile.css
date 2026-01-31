@@ -1,7 +1,10 @@
-*{
-  font-family: roboto,arial;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, arial;
 }
-body {
+.org-profile {
   padding-top: 70px;
   padding-left: 15px;
   padding-right: 15px;
@@ -153,7 +156,7 @@ body {
   border-color: gainsboro;
   margin-right: 0px;
 }
-.container{
+.event-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
@@ -277,44 +280,6 @@ body {
 }
 
 
-@media (max-width: 786px){
-  .profile-picture{
-  width:100px;
-  height: 100px;
-}
-.org-name{
-  font-size: 20px;
-
-}
-.info-title{
-  font-size: 15px;
-
-}
-.amount{
-  font-size: 20px;
-}
-.follow{
-  font-size: 15px;
-}
-
-.profile-actions {
-  gap: 8px;
-}
-
-.edit-profile-btn {
-  font-size: 14px;
-  padding: 6px 12px;
-}
-.button-toggle{
-  height: 26px;
-  margin-bottom: 50px;
-  
-}
-.button-toggle button {
-  font-size: 16px;
-  
-}
-}
 /* Responsive Design */
 @media (max-width: 1200px) {
   .profile {
@@ -322,7 +287,7 @@ body {
     column-gap: 40px;
   }
 
-  .container {
+  .event-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 15px;
@@ -355,7 +320,7 @@ body {
     font-size: 25px;
   }
 
-  .container {
+  .event-container {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
     padding: 15px;
@@ -375,7 +340,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
+  .org-profile {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -414,7 +379,7 @@ body {
     padding: 6px 14px;
   }
 
-  .container {
+  .event-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 15px;
     padding: 12px;
@@ -500,7 +465,7 @@ body {
     font-size: 16px;
   }
 
-  .container {
+  .event-container {
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 10px;
@@ -524,7 +489,7 @@ body {
 
   .event-catagory {
     font-size: 12px;
-    padding: 0px 4px;
+    padding: 2px px;
   }
 
   .time-and-location {
@@ -550,7 +515,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
+  .org-profile {
     padding-top: 60px;
   }
 
@@ -593,7 +558,7 @@ body {
     font-size: 14px;
   }
 
-  .container {
+  .event-container {
     padding: 8px;
   }
 

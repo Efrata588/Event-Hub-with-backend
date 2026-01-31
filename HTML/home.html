@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   <title>EventHub-Home-page</title>
-  <link rel="stylesheet" href="../Styles/home-page/body.css">
+  <link rel="stylesheet" href="../Styles/home-page/home.css">
   <link rel="stylesheet" href="../Styles/common/header.css">
   <link rel="stylesheet" href="../Styles/common/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Ingrid+Darling&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" href="../Images/EventHub-strikingly-logo-2025-11-29/logo-favicon.png" type="image/png">
 </head>
-<body>
+<body >
+  <div class="page home-page">
   <div class="header">
     <div class="left-header">
       <img  class="logo" src="../Images//EventHub-strikingly-logo-2025-11-29/logo-alt-dark-transparent.png">
@@ -32,18 +33,19 @@
       <a class="nav-pages" href="./home.html">Home</a>
       <a class="nav-pages" href="./organizer-privilaged-pages/create-event-form.html">Create</a>
       <a class="nav-pages" href="./organizer-privilaged-pages/event-recap-form.html">EventLog</a>
-      <a class="nav-pages" href="./attendee-dashboard.html">Dashboard</a>
+      <a class="nav-pages dashboard" href="./attendee-dashboard.html">Dashboard</a>
     </div>
-
-   
   </div>
-  <h1>
-    Discover Events
-  </h1>
-  <h3>
-    8 events available
-  </h3>
-  <div class="container">
+  <div>
+    <h1>
+      Discover Events
+    </h1>
+    <h3>
+      8 events available
+    </h3>
+  </div>
+  
+  <div class="event-container">
     <div class="event-card">
       <div class="top-half">
          <img class="event-image" src="../Images/festival.png">
@@ -320,45 +322,47 @@
 
   
   
-<footer>
-  <div class="footer-content">
-    <div class="footer-section">
-      <img src="../Images/EventHub-strikingly-logo-2025-11-29/logo-alt-light-transparent.png" alt="EventHub Logo" class="footer-logo">
-      <p>Your gateway to amazing events and unforgettable experiences.</p>
-    </div>
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./intro.html">About Us</a></li>
-        <li><a href="./login.html">Log In</a></li>
-        <li><a href="./signup.html">Sign Up</a></li>
-        <li><a href="./attendee-dashboard.html">Dashboard</a></li>
-        
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Contact</h4>
-      <ul>
-        <li>Email: eventhub@gmail.org</li>
-        <li>Phone: +251 912 23336</li>
-        <li>Telegram:  @eventHub</li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Social Media</h4>
-      <div class="social-links">
-        <ul>
-          <li><a href="https://web.facebook.com/" target="_blank">Facebook</a></li>
-          <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-        </ul>
+<footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <img src="../Images/EventHub-strikingly-logo-2025-11-29/logo-alt-light-transparent.png" alt="EventHub Logo" class="footer-logo">
+            <p>Your gateway to amazing events and unforgettable experiences.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./login.html">Log In</a></li>
+              <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#hero">Welcome</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#user-statistics">User Statistics</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Social Media</h4>
+            <div class="social-links">
+              <ul>
+                <li><a href="https://web.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 EventHub. All Rights Reserved.</p>
+        </div>
       </div>
-    </div>
+    </footer>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 EventHub. All Rights Reserved.</p>
-  </div>
-</footer>
 </body>
 </html>

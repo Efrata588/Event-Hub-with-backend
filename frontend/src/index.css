@@ -1,0 +1,65 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Common Form Elements (Moved from home-controls.css) */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.search-btn-common {
+  background-color: #18385e;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.search-btn-common:hover {
+  opacity: 0.9;
+}
+
+.input-common {
+  border: 2px solid #18385e;
+  outline: none;
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}

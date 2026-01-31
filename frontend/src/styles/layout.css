@@ -1,0 +1,28 @@
+/* Global Layout Styles */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Adjust for smaller screens where header grows/shrinks */
+@media (max-width: 600px) {
+  .main-content {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding-top: 110px;
+  }
+}

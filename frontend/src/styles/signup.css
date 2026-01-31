@@ -1,0 +1,246 @@
+.signup-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(244, 240, 248);
+  font-family: roboto, arial;
+  padding: 50px 15px 15px 30px;
+  box-sizing: border-box;
+}
+.auth-auth-logo {
+  width: 37%;
+}
+
+.slogan {
+  font-family: roboto;
+  font-size: 30px;
+  color: #7da6d8;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(186, 180, 180);
+  margin-top: 5px;
+  border-radius: 7px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.button-toggle {
+  display: flex;
+  width: 100%;
+  border: 2px solid gainsboro;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background-color: #f1f0f6f1;
+}
+
+.toggle-btn {
+  flex: 1;
+  text-align: center;
+  padding: 6px 0;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  color: black;
+  transition: background 0.2s ease;
+}
+
+/* active page */
+.toggle-btn.active {
+  background-color: white;
+  box-shadow: 0 0 0 2px gainsboro inset;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  padding: 8px 5px;
+  background-color: #0a4690;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(23, 23, 23, 0.5);
+}
+
+.sign-up:hover {
+  background-color: #20508a;
+}
+.copy-right {
+  margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+  form {
+    width: 450px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 40px;
+  }
+
+  .auth-auth-logo {
+    height: 130px;
+  }
+
+  .slogan {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  form {
+    width: 400px;
+    padding: 25px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .auth-logo {
+    height: 120px;
+  }
+
+  .slogan {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 90%;
+    max-width: 380px;
+    padding: 20px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .auth-logo {
+    height: 100px;
+  }
+
+  .slogan {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    width: 95%;
+    max-width: 350px;
+    padding: 18px;
+  }
+
+  .button-toggle {
+    margin-bottom: 25px;
+  }
+
+  .button-toggle button {
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 100%;
+    max-width: 300px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-logo {
+    height: 90px;
+  }
+
+  .slogan {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  form {
+    width: 95%;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .button-toggle {
+    height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .button-toggle button {
+    font-size: 13px;
+  }
+
+  .log-in,
+  .create-account {
+    width: 100%;
+    max-width: 280px;
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+
+  .to-login,
+  .to-signup {
+    font-size: 16px;
+  }
+}
